@@ -375,7 +375,7 @@ void applyEffect(inout vec4 vertex, vec4 baseColor, bool isShadow) {
     fshGlyphT3 = vec3(0.0);
     if (flagOutline || flagNeon || flagHatch || flagSplit ||
         flagChromatic || flagExtrude || flagNoise || flagLiquid || flagWater) {
-        int vid_glyph = gl_VertexIndex % 4;
+        int vid_glyph = int(mod(float(gl_VertexIndex), 4.0));
         if (vid_glyph == 0) fshGlyphT0 = vec3(UV0, 1.0);
         if (vid_glyph == 1) fshGlyphT2 = vec3(UV0, 1.0);
         if (vid_glyph == 2) fshGlyphT1 = vec3(UV0, 1.0);
