@@ -41,10 +41,10 @@
       {
         "formats": {
           "min_inclusive": 88,
-          "max_inclusive": 200
+          "max_inclusive": 96
         },
         "min_format": 88,
-        "max_format": 200,
+        "max_format": 96,
         "directory": "26_2"
       },
       {
@@ -53,13 +53,10 @@
           97,
           1
         ],
-        "max_format": [
-          97,
-          1
-        ],
+        "max_format": 200,
         "formats": {
           "min_inclusive": 97,
-          "max_inclusive": 97
+          "max_inclusive": 200
         }
       }
     ]
